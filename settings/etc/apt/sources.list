@@ -1,0 +1,15 @@
+deb [arch=all] http://ftp.tw.debian.org/debian/ wheezy main contrib non-free
+deb [arch=sh4] http://www.si-linux.co.jp/pub/debian-sh/wheezy-sh4 wheezy main
+deb-src http://download.si-linux.co.jp/debian-sh/wheezy-sh4/ wheezy main contrib non-free
+
+# Taiwan User Group local repository
+deb http://forum.cse.yzu.edu.tw/ wheezy-sh4/
+
+# sample for local repository
+#deb http://192.168.15.5:8080/ wheezy-sh4/
+
+# original settings from Debian Wheezy rootfs author Chia-Cheng Huang
+#deb [arch=all] http://ftp.jp.debian.org/debian/ wheezy main contrib non-free
+#deb [arch=sh4] http://www.si-linux.co.jp/pub/debian-sh/wheezy-sh4 wheezy main
+#deb-src http://ftp.jp.debian.org/debian/ wheezy main contrib non-free
+#deb http://1.34.239.30  wheezy-sh4/
