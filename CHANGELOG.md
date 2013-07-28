@@ -8,3 +8,5 @@
  + correct the package source.list
  + support TV console
  + import source of kernel and u-boot
+ + including global rc.local
+ + create build target.tgz script

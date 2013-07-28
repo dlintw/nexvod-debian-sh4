@@ -10,22 +10,4 @@
 # bits.
 #
 # By default this script does nothing.
-
-
-ntpdate time.stdtime.gov.tw
-
-#/bin/autoIPMailer
-
-# support TV display, commands:
-#   cd /usr
-#   wget http://forum.cse.yzu.edu.tw/wheezy-sh4/modules.tgz
-#   tar xf modules.tgz
-#   rm modules.tgz
-#   cd /
-#   wget http://forum.cse.yzu.edu.tw/wheezy-sh4/stmfb.tgz
-#   tar xf stmfb.tgz
-#   rm stmfb.tgz
-#   ln -sf stmfb/vmlinux.ub .
-(cd /stmfb ; ./insmod.sh)
-
-exit 0
+. /etc/rc.local.pub

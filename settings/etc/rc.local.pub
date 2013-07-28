@@ -1,0 +1,22 @@
+#!/bin/sh -e
+#
+# rc.local.pub
+# 不建議修改此檔, 此檔為開發者釋放出給一般使用者使用的設定
+
+ntpdate time.stdtime.gov.tw
+
+#/bin/autoIPMailer
+
+# support TV display, commands:
+#   cd /usr
+#   wget http://forum.cse.yzu.edu.tw/wheezy-sh4/modules.tgz
+#   tar xf modules.tgz
+#   rm modules.tgz
+#   cd /
+#   wget http://forum.cse.yzu.edu.tw/wheezy-sh4/stmfb.tgz
+#   tar xf stmfb.tgz
+#   rm stmfb.tgz
+#   ln -sf stmfb/vmlinux.ub .
+(cd /stmfb ; ./insmod.sh)
+
+exit 0
