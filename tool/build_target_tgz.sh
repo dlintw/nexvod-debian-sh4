@@ -19,6 +19,9 @@ set -o errexit
 rm -rf mnt_system
 tar xpf $from_tgz
 
+# Fixed #3 apt-get fopen permission denied
+chown -R 6:0 mnt_system/var/cache/man
+
 wget -c http://forum.cse.yzu.edu.tw/wheezy-sh4/modules.tgz
 cd mnt_system/usr
 tar xpf ../../modules.tgz
