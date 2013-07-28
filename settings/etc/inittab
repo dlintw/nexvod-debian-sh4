@@ -54,8 +54,8 @@ po::powerokwait:/etc/init.d/powerfail stop
 # support console from special cable
 s0:2345:respawn:/sbin/agetty -8 -s 115200 ttyAS0 linux
 
-1:2345:respawn:/sbin/getty 115200 ttySC0
-2:2345:respawn:/sbin/getty 38400 tty1
+c1:2345:respawn:/sbin/agetty -8 -s 38400 tty1 linux
+c2:2345:respawn:/sbin/agetty -8 -s 38400 tty2 linux
 #2:23:respawn:/sbin/getty 38400 tty2
 #3:23:respawn:/sbin/getty 38400 tty3
 #4:23:respawn:/sbin/getty 38400 tty4

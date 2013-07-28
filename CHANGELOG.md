@@ -10,3 +10,7 @@
  + import source of kernel and u-boot
  + including global rc.local
  + create build target.tgz script
+
+## 0.0.2 (not released) fixed some bugs
+ + fixed apt-get fuse fopen denied problem
+ + fixed console message: INIT: Id "1" respawning too fast: disabled for 5 minutes
